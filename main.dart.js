@@ -9843,7 +9843,8 @@ _.e=e
 _.f=!1},
 NG:function NG(){this.d=null},
 a7r:function a7r(a){this.a=a},
-Gw:function Gw(a){this.x=a},
+Gw:function Gw(a,b){this.x=a
+this.y=b},
 a7q:function a7q(){},
 aeP:function aeP(){},
 ue:function ue(a){this.a=a},
@@ -49672,12 +49673,12 @@ g.h(0,"languages")
 g.h(0,"platform")
 g.h(0,"product")
 i=g.h(0,"productSub")
-g.h(0,"userAgent")
+j=g.h(0,"userAgent")
 g.h(0,"vendor")
 g.h(0,"vendorSub")
 g.h(0,h)
 g.h(0,"maxTouchPoints")
-return A.ca(new A.Gw(i),t.U2)}}
+return A.ca(new A.Gw(i,j),t.U2)}}
 A.Gw.prototype={$iue:1}
 A.a7q.prototype={}
 A.aeP.prototype={
@@ -92334,7 +92335,7 @@ tz(){var s=0,r=A.D(t.H),q=1,p,o=this,n,m,l,k,j,i,h,g,f,e,d,c,b
 var $async$tz=A.y(function(a,a0){if(a===1){p=a0
 s=q}while(true)switch(s){case 0:q=3
 s=6
-return A.v(A.aER(A.hw("http://worldtimeapi.org/api/ip",0,null),null),$async$tz)
+return A.v(A.aER(A.hw("https://worldtimeapi.org/api/ip",0,null),null),$async$tz)
 case 6:n=a0
 s=n.b===200?7:8
 break
@@ -92366,7 +92367,7 @@ break
 case 3:q=2
 b=p
 g=A.a6(b)
-A.em(g)
+A.em("api: "+A.f(g))
 s=5
 break
 case 2:s=1
@@ -93021,8 +93022,7 @@ n=new A.NG()
 s=7
 return A.v(n.gx7(),$async$zc)
 case 7:m=b
-k=m.x
-if(k==null)k="Unknown"
+k=m.y
 q=k
 s=1
 break
@@ -93188,7 +93188,7 @@ anE(a,b,a0){var s=0,r=A.D(t.H),q=1,p,o=this,n,m,l,k,j,i,h,g,f,e,d,c
 var $async$vl=A.y(function(a1,a2){if(a1===1){p=a2
 s=q}while(true)switch(s){case 0:q=3
 s=6
-return A.v(A.aER(A.hw("http://worldtimeapi.org/api/ip",0,null),null),$async$vl)
+return A.v(A.aER(A.hw("https://worldtimeapi.org/api/ip",0,null),null),$async$vl)
 case 6:n=a2
 s=n.b===200?7:9
 break
