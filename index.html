@@ -34,7 +34,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = "4136180622";
+    var serviceWorkerVersion = "85742895";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -106,6 +106,22 @@
         }
     }
 </script>
+  <style>
+    body {
+      background-color: #000000;
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+    }
+
+    .main-content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
@@ -121,5 +137,8 @@
       });
     });
   </script>
+  <div class="main-content">
+    <img src="main-icon.png" alt="StarPrime">
+  </div>
 </body>
 </html>
