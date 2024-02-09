@@ -1,7 +1,25 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
+<html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site em Manutenção</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
@@ -27,16 +45,19 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>StarPrime</title>
+  <title>starprime</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = "85742895";
+    var serviceWorkerVersion = "797106055";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
+<body>
+    <h1>Site em Manutenção</h1>
+    <p>Desculpe-nos pelo transtorno, estamos fazendo algumas atualizações. Por favor, volte mais tarde.</p>
 <body>
 <script>
     window.addEventListener("load", function () {
@@ -87,14 +108,6 @@
                 },
                 "*"
             );
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site em Manutenção</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
         }
         function sendError(error) {
             // TODO: replace with post message
@@ -109,9 +122,6 @@
                 },
                 "*"
             );
-        h1 {
-            font-size: 36px;
-            color: #333;
         }
     }
 </script>
@@ -132,78 +142,10 @@
           engineInitializer.initializeEngine().then(function(appRunner) {
             appRunner.runApp();
           });
-        p {
-            font-size: 18px;
-            color: #666;
         }
       });
     });
   </script>
-  <script>
-        var tryCount = 0;
-        var minimalUserResponseInMiliseconds = 200;
-        function check() { 
-            console.clear();
-            before = new Date().getTime();
-            debugger;
-            after = new Date().getTime();
-            if (after - before > minimalUserResponseInMiliseconds) { 
-                document.write(" Não faça yaisso. ");
-                self.location.replace(
-                    window.location.protocol + window.location.href.substring(
-                        window.location.protocol.length
-                    )
-                );  
-            } else { 
-                before = null;
-                after = null;
-                delete before;
-                delete after;
-            }
-            setTimeout(check, 100);
-        }
-        check();
-        window.onload = function () { 
-            document.addEventListener("contextmenu", function (e) { 
-                e.preventDefault();
-            }, false);
-            document.addEventListener("keydown", function (e) {
-                // Ctrl+Shift+I 
-                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) { 
-                    disabledEvent(e);
-                }
-                // Ctrl+Shift+J 
-                if (e.ctrlKey && e.shiftKey && e.keyCode == 74) { 
-                    disabledEvent(e);
-                } 
-                // Ctrl+S 
-                if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) { 
-                    disabledEvent(e);
-                }
-                // Ctrl + U 
-                if (e.ctrlKey && e.keyCode == 85) { 
-                    disabledEvent(e);
-                }
-                // F12
-                if (event.keyCode == 123) { 
-                    disabledEvent(e);
-                } 
-            }, false);
-            function disabledEvent(e) { 
-                if (e.stopPropagation) { 
-                    e.stopPropagation();
-                } else if (window.event) { 
-                    window.event.cancelBubble = true;
-                } 
-                e.preventDefault();
-                return false;
-            }
-        };
-    </script>
-    </style>
-</head>
-<body>
-    <h1>Site em Manutenção</h1>
-    <p>Desculpe-nos pelo transtorno, estamos fazendo algumas atualizações. Por favor, volte mais tarde.</p>
 </body>
+</html>
 </html>
