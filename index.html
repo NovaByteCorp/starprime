@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -18,7 +19,9 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="StarPrime - O portal do entreitenimento">
+  <meta name="google-signin-client_id"
+    content="705763250021-8hcqddg5ur81360n6i3b06plviop1bii.apps.googleusercontent.com">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -27,18 +30,19 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
-  <title>StarPrime</title>
+  <title>starprime</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = "85742895";
+    const serviceWorkerVersion = "938274318";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
+
 <body>
 <script>
     window.addEventListener("load", function () {
@@ -113,80 +117,43 @@
     }
   </style>
   <script>
-    window.addEventListener('load', function(ev) {
+    window.addEventListener('load', function (ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
             appRunner.runApp();
           });
         }
       });
     });
   </script>
-  <script>
-        var tryCount = 0;
-        var minimalUserResponseInMiliseconds = 200;
-        function check() { 
-            console.clear();
-            before = new Date().getTime();
-            debugger;
-            after = new Date().getTime();
-            if (after - before > minimalUserResponseInMiliseconds) { 
-                document.write(" Não faça yaisso. ");
-                self.location.replace(
-                    window.location.protocol + window.location.href.substring(
-                        window.location.protocol.length
-                    )
-                );  
-            } else { 
-                before = null;
-                after = null;
-                delete before;
-                delete after;
-            }
-            setTimeout(check, 100);
-        }
-        check();
-        window.onload = function () { 
-            document.addEventListener("contextmenu", function (e) { 
-                e.preventDefault();
-            }, false);
-            document.addEventListener("keydown", function (e) {
-                // Ctrl+Shift+I 
-                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) { 
-                    disabledEvent(e);
-                }
-                // Ctrl+Shift+J 
-                if (e.ctrlKey && e.shiftKey && e.keyCode == 74) { 
-                    disabledEvent(e);
-                } 
-                // Ctrl+S 
-                if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) { 
-                    disabledEvent(e);
-                }
-                // Ctrl + U 
-                if (e.ctrlKey && e.keyCode == 85) { 
-                    disabledEvent(e);
-                }
-                // F12
-                if (event.keyCode == 123) { 
-                    disabledEvent(e);
-                } 
-            }, false);
-            function disabledEvent(e) { 
-                if (e.stopPropagation) { 
-                    e.stopPropagation();
-                } else if (window.event) { 
-                    window.event.cancelBubble = true;
-                } 
-                e.preventDefault();
-                return false;
-            }
-        };
-    </script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAuQwhm805cMAWHj-tKtvtvTESKW3y-tpw",
+      authDomain: "starprime-c48e4.firebaseapp.com",
+      projectId: "starprime-c48e4",
+      storageBucket: "starprime-c48e4.appspot.com",
+      messagingSenderId: "705763250021",
+      appId: "1:705763250021:web:21e6e59a5f3511a2b55b8c"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
 </body>
+
 </html>
