@@ -96002,7 +96002,7 @@ $.ar.toString
 A.Ex(B.Pb,null)
 A.my(A.b([B.Ei,B.Ej],t.UW))},
 G(a){var s,r,q=null,p=this.a.c,o='             <iframe src="'+p,n=o+'" allowfullscreen frameborder="0" style="display:block;background:black;overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0%;left:0px;right:0px;bottom:0px" allow="autoplay"></iframe>'
-if(B.c.q(p,"itssportstime.info"))n=o+'" allowfullscreen sandbox="allow-scripts allow-same-origin" frameborder="0" style="display:block;background:black;overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0%;left:0px;right:0px;bottom:0px" allow="autoplay"></iframe>'
+if(B.c.q(p,"itssportstime.info")||B.c.q(p,"embedme.top"))n=o+'" allowfullscreen sandbox="allow-scripts allow-same-origin" frameborder="0" style="display:block;background:black;overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0%;left:0px;right:0px;bottom:0px" allow="autoplay"></iframe>'
 p=A.pt(q,q,!0,B.u,q,1,q,q,0,!1,q,!1,B.u,q,A.eh(q,q,A.bJ(B.br,A.q(a).ay.b,q,q),q,new A.azg(a),q,q,q,q),q,!0,q,q,q,q,q,q,q,q,q,1,q)
 o=t.w
 s=A.b8(a,q,o).w
